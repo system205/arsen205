@@ -1,0 +1,11 @@
+services:
+  dev:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    expose:
+      - 5174
+    ports:
+      - "5174:5173"
+    command: sleep infinity
